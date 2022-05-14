@@ -29,7 +29,7 @@ public class UpdateOrderDao {
      * @param paramsDto Object with the parameters for the operation
      * @return Number of affected rows
      */
-    public int updateOrderStatus(ParamsDto paramsDto) throws SQLException {
+    public int updateOrderStatus(ParamsDto paramsDto) {
         int numberResults = 0;
 
         try (Connection con = database.getConnection();
